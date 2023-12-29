@@ -614,6 +614,10 @@ img {
   visibility: hidden;
 }
 
+.subscription {
+  margin-left: 80px;
+}
+
 .subscription-text {
   margin-bottom: 16px;
   font-weight: 500;
