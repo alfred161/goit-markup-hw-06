@@ -775,6 +775,7 @@ img {
 }
 .checkbox:checked .check {
   background-color: var(--OCEAN);
+  border: none;
   fill: var(--CLOUD);
 }
 
