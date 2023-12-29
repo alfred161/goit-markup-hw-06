@@ -9,6 +9,7 @@
   --LIGHT-SLATE: #8e8f99;
   --MINT: #31d0aa;
   --DAIRY: #fcfcfc;
+  --ROBOTO: "Roboto", sans-serif;
 }
 
 * {
@@ -18,7 +19,7 @@
 
 body {
   color: var(--SLATE);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ROBOTO);
   background-color: var(--WHITE);
 }
 
@@ -127,7 +128,7 @@ body {
 
 .hero-button {
   background-color: var(--IRIS);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ROBOTO);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -293,7 +294,7 @@ body {
 }
 
 .profile-button {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ROBOTO);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -509,7 +510,7 @@ img {
   fill: var(--CLOUD);
 }
 
-.footer-social-media-content {
+.footer-social-media-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -611,4 +612,54 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+.subscription-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--WHITE);
+}
+
+.subscription-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscription-form .email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--WHITE);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--WHITE);
+}
+
+.subscription-submit {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ROBOTO);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--WHITE);
+  cursor: pointer;
+  background-color: var(--IRIS);
+  border: none;
+  border-radius: 4px;
+}
+
+.subscription-send {
+  margin-left: 16px;
 }
