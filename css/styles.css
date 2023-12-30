@@ -774,10 +774,13 @@ img {
   fill: transparent;
 }
 
-.checkbox:checked .check {
+.checkbox:checked ~ .checkbox-label > .check {
   background-color: var(--OCEAN);
   border: none;
   fill: var(--CLOUD);
+  /* height: 60px;
+  width: 50px;
+  resize: vertical; */
 }
 
 .privacy {
